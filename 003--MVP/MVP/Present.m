@@ -59,11 +59,7 @@
 }
 #pragma mark - PresentDelegate
 - (void)didClickAddBtnWithNum:(NSString *)num indexPath:(NSIndexPath *)indexPath{
-    
-    //    @synchronized(self){
-    //
-    //    }
-    
+
     for (int i = 0; i<self.dataArray.count; i++) {
         // 查数据 ---> 钱
         if (i == indexPath.row) {// 商品ID 容错

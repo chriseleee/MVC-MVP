@@ -52,6 +52,7 @@ static NSString *const reuserId = @"reuserId";
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.tableView];
     self.tableView.dataSource = self.dataSource;
+    self.tableView.delegate = self.dataSource;
     self.pt.delegate          = self;
 }
 
